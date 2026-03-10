@@ -2027,9 +2027,7 @@
                 <input type="color" id="selectionColorPicker" value="#39ff14" oninput="updateSelectionColor(this.value)" style="width:36px; height:22px; border:1px solid var(--primary); cursor:pointer; background:transparent; padding:0;">
             </div>
 
-```
-</div>
-```
+    </div>
 
 <div id="mainToolbar" style="display: flex; align-items: center; gap: 8px; position: relative; flex-wrap: wrap;">
 </div>
@@ -2058,20 +2056,17 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     </button>
 
-```
-<button id="filterBtn" onclick="toggleFilterDropdown()" style="position:relative;" title="Filter">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
-    <span class="filter-dot"></span>
-</button>
-<button id="cardEditBtn" onclick="toggleCardEditMode()" title="Edit Cards">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
-        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
-    </svg>
-</button>
-<button onclick="openQuickEditor()" style="font-size:24px; font-weight:400;">＋</button>
-```
-
+    <button id="filterBtn" onclick="toggleFilterDropdown()" style="position:relative;" title="Filter">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+        <span class="filter-dot"></span>
+    </button>
+    <button id="cardEditBtn" onclick="toggleCardEditMode()" title="Edit Cards">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+        </svg>
+    </button>
+    <button onclick="openQuickEditor()" style="font-size:24px; font-weight:400;">＋</button>
 </footer>
 
 <div id="filterDropdown">
@@ -2092,6 +2087,7 @@
     </div>
     <button class="filter-clear-btn" onclick="clearTagFilters()">✕ Clear Tag Filters</button>
 </div>
+
 
 </div>
 
@@ -2157,7 +2153,6 @@
 <input type="file" id="bgImgInput" accept="image/*" style="display:none;" onchange="handleBgImageUpload(this)">
 
 <!-- Background Editor Overlay -->
-
 <div id="bgEditorOverlay">
     <div id="bgEditorHeader">
         <h2>🎨 Background Editor</h2>
@@ -2375,19 +2370,16 @@
         <button class="pt-tab-btn" data-tab="5" onclick="ptSwitchTab(5)">5<span class="pt-tab-dot"></span></button>
     </div>
 
-```
-<div id="ptTabLockBar">
-    <button class="pt-tab-lock-pill" data-lock-tab="1" onclick="ptToggleTabLock(1)">🔓 1</button>
-    <button class="pt-tab-lock-pill" data-lock-tab="2" onclick="ptToggleTabLock(2)">🔓 2</button>
-    <button class="pt-tab-lock-pill" data-lock-tab="3" onclick="ptToggleTabLock(3)">🔓 3</button>
-    <button class="pt-tab-lock-pill" data-lock-tab="4" onclick="ptToggleTabLock(4)">🔓 4</button>
-    <button class="pt-tab-lock-pill" data-lock-tab="5" onclick="ptToggleTabLock(5)">🔓 5</button>
-</div>
-<div id="pasteTesterBoxWrap">
-    <textarea id="pasteTesterBox" placeholder="Paste your copied prompt here to test it…" oninput="pasteTesterOnInput()"></textarea>
-</div>
-```
-
+    <div id="ptTabLockBar">
+        <button class="pt-tab-lock-pill" data-lock-tab="1" onclick="ptToggleTabLock(1)">🔓 1</button>
+        <button class="pt-tab-lock-pill" data-lock-tab="2" onclick="ptToggleTabLock(2)">🔓 2</button>
+        <button class="pt-tab-lock-pill" data-lock-tab="3" onclick="ptToggleTabLock(3)">🔓 3</button>
+        <button class="pt-tab-lock-pill" data-lock-tab="4" onclick="ptToggleTabLock(4)">🔓 4</button>
+        <button class="pt-tab-lock-pill" data-lock-tab="5" onclick="ptToggleTabLock(5)">🔓 5</button>
+    </div>
+    <div id="pasteTesterBoxWrap">
+        <textarea id="pasteTesterBox" placeholder="Paste your copied prompt here to test it…" oninput="pasteTesterOnInput()"></textarea>
+    </div>
 </div>
 
 <div id="fsOverlay" class="fullscreen-overlay" onclick="closeFsOverlay()">
@@ -6560,7 +6552,6 @@ initApp();
 </script>
 
 <!-- Import Modal -->
-
 <div id="importModal" class="modal-overlay" onclick="closeImportModal(event)" style="display:none;">
     <div class="modal-card" style="width:min(320px,calc(100vw - 48px)); padding:0;">
         <div style="padding:16px 18px 12px; border-bottom:1px solid var(--divider);">
